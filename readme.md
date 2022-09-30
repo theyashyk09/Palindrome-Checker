@@ -6,6 +6,10 @@ This is a palindrome checker developed using html, tailwindcss and javascript in
 
 ## Video
 
+
+https://user-images.githubusercontent.com/109405477/193335136-0b4b9512-d883-4dcc-9c78-72f973d59696.mp4
+
+
 **Check it out at : https://checkpalindromenow.netlify.app/**
 
 ## 🚀 About Me

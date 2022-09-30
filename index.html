@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palindrome Checker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="font-[Poppins] h-screen flex flex-col justify-center gap-20 md:gap-0 items-center bg-[#efeaae] overflow-hidden"
+  >
+    <h1
+      class="text-center text-5xl md:mt-10 md:absolute md:top-10 text-[#493114] font-bold"
+    >
+      Palindrome Checker
+    </h1>
+
+    <input
+      type="text"
+      name=""
+      id="inp"
+      class="border-2 border-slate-900 w-[27rem] h-[3.5rem] text-2xl text-center rounded-sm max-w-[95%]"
+    /><br />
+    <button
+      id="btn"
+      class="text-[1.5rem] bg-orange-400 px-8 py-2 rounded-sm hover:scale-110 hover:bg-[#493114] hover:text-orange-400 transition-all duration-200 ease-in-out -mt-28 md:-mt-0"
+    >
+      Check
+    </button>
+    <p id="result" class="text-[2rem] mt-10 text-[#493114]"></p>
+
+    <img
+      src="./image/logo.png"
+      class="h-[50px] absolute bottom-10 md:absolute md:top-7 md:left-7 hidden md:block"
+      alt=""
+    />
+
+    <script src="./palindrome.js"></script>
+  </body>
+</html>

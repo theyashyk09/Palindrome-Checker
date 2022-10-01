@@ -3,17 +3,18 @@ let button = document.getElementById("btn");
 let result = document.getElementById("result");
 
 button.addEventListener("click", () => {
-  let realText = text.value.toLowerCase();
+  let inputValue = text.value.toLowerCase();
 
-  let normalText = realText.replace(/\W+|_/g, "");
+  let normalVal = inputValue.replace(/\W+|_/g, "");
+  let reverseVal = normalVal.split("").reverse().join("");
 
-  let reverseText = normalText.split("").reverse().join("");
-
-  if (!realText) {
+  if (!inputValue) {
     return;
-  } else if (normalText === reverseText) {
-    result.textContent = "It's a Palindrome";
-  } else {
+  } else if (inputValue.length <= 2) {
+    result.textContent = "Enter minimum 3 digits to continue";
+  } else if (normalVal === reverseVal) {
+    result.textContent = "Palindrome";
+  } else if (normalVal !== reverseVal) {
     result.textContent = "Not a Palindrome";
   }
 });
